@@ -1,0 +1,208 @@
+    * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+
+
+    body {
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        background-color: #fff;
+    }
+
+        .header {
+            padding: 20px 30px;
+            border-bottom: 1px solid #ebebeb;
+        }
+
+        .header h1 {
+            color: #d93025;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 40px 45px;
+        }
+
+        .section-title {
+            color: #d93025;
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ebebeb;
+        }
+
+        .form-section {
+            margin-bottom: 35px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            min-height: 35px;
+        }
+
+        .form-label {
+            width: 200px;
+            padding-right: 15px;
+            font-size: 13px;
+            color: #222;
+        }
+
+        .form-input {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .form-input input[type="text"] {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #d9d9d9;
+            border-radius: 1px;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .form-input input[type="text"]:focus {
+            border-color: #4285f4;
+            box-shadow: 0 0 0 1px #4285f4;
+        }
+
+        .form-input select {
+            padding: 8px 10px;
+            border: 1px solid #d9d9d9;
+            border-radius: 1px;
+            font-size: 13px;
+            background-color: #fff;
+            outline: none;
+            width: 100%;
+        }
+
+        .form-input select:focus {
+            border-color: #4285f4;
+            box-shadow: 0 0 0 1px #4285f4;
+        }
+
+        .form-description {
+            width: 200px;
+            padding-left: 15px;
+            font-size: 11px;
+            color: #777;
+            font-style: italic;
+        }
+
+        .button-container {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ebebeb;
+        }
+
+        .search-button {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 13px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-left: 560px;
+        }
+
+        .search-button:hover {
+            background-color: #3367d6;
+        }
+
+        .reset-button {
+            background-color: #f8f9fa;
+            color: #3c4043;
+            border: 1px solid #f8f9fa;
+            padding: 10px 20px;
+            font-size: 13px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .reset-button:hover {
+            background-color: #f1f3f4;
+            border-color: #dadce0;
+        }
+
+        .tips-link {
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 11px;
+            margin-left: 10px;
+        }
+
+        .tips-link:hover {
+            text-decoration: underline;
+        }
+
+        .google-logo {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            border-bottom: 1px solid #ebebeb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #222;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .form-label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            
+            .form-input {
+                width: 100%;
+                max-width: none;
+            }
+            
+            .form-description {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 5px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="advance-styles.css">
+</head>
+<body>
+    <div class="top-nav">
+        <div>
+            <span class="google-logo">
+                <image src="google.png" alt="Google Icon" height="24"></image>
+            </span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Go Back to Google Search</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Advanced Search</h1>
+    </div>
+
+    <div class="container">
+        <form action="https://www.google.com/search" method="get">
+            <div class="form-section">
+                <div class="section-title">Find pages with...</div>
+                
+                <div class="form-row">
+                    <div class="form-label">all these words:</div>
+                    <div class="form-input">
+                        <input type="text" name="as_q" placeholder="">
+                    </div>
+                    <div class="form-description">Type the important words: tri-colour rat terrier</div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">this exact word or phrase:</div>
+                    <div class="form-input">
+                        <input type="text" name="as_epq" placeholder="">
+                    </div>
+                    <div class="form-description">Put exact words in quotes: "rat terrier"</div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">any of these words:</div>
+                    <div class="form-input">
+                        <input type="text" name="as_oq" placeholder="">
+                    </div>
+                    <div class="form-description">Type OR between all the words you want: miniature OR standard</div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">none of these words:</div>
+                    <div class="form-input">
+                        <input type="text" name="as_eq" placeholder="">
+                    </div>
+                    <div class="form-description">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="section-title">Then narrow your results by...</div>
+                
+                <div class="form-row">
+                    <div class="form-label">language:</div>
+                    <div class="form-input">
+                        <select name="lr">
+                            <option value="">any language</option>
+                            <option value="lang_en">English</option>
+                            <option value="lang_es">Spanish</option>
+                            <option value="lang_fr">French</option>
+                            <option value="lang_de">German</option>
+                            <option value="lang_it">Italian</option>
+                            <option value="lang_pt">Portuguese</option>
+                            <option value="lang_ru">Russian</option>
+                            <option value="lang_ja">Japanese</option>
+                            <option value="lang_ko">Korean</option>
+                            <option value="lang_zh">Chinese</option>
+                            <option value="lang_ar">Arabic</option>
+                            <option value="lang_hi">Hindi</option>
+                        </select>
+                    </div>
+                    <div class="form-description"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">region:</div>
+                    <div class="form-input">
+                        <select name="cr">
+                            <option value="">any region</option>
+                            <option value="countryUS">United States</option>
+                            <option value="countryGB">United Kingdom</option>
+                            <option value="countryCA">Canada</option>
+                            <option value="countryAU">Australia</option>
+                            <option value="countryDE">Germany</option>
+                            <option value="countryFR">France</option>
+                            <option value="countryES">Spain</option>
+                            <option value="countryIT">Italy</option>
+                            <option value="countryJP">Japan</option>
+                            <option value="countryCN">China</option>
+                            <option value="countryIN">India</option>
+                            <option value="countryBR">Brazil</option>
+                        </select>
+                    </div>
+                    <div class="form-description"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">last update:</div>
+                    <div class="form-input">
+                        <select name="as_qdr">
+                            <option value="">anytime</option>
+                            <option value="d">past 24 hours</option>
+                            <option value="w">past week</option>
+                            <option value="m">past month</option>
+                            <option value="y">past year</option>
+                        </select>
+                    </div>
+                    <div class="form-description"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">site or domain:</div>
+                    <div class="form-input">
+                        <input type="text" name="as_sitesearch" placeholder="">
+                    </div>
+                    <div class="form-description">Search one site (like wikipedia.org) or limit your results to a domain like .edu, .org or .gov</div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">terms appearing:</div>
+                    <div class="form-input">
+                        <select name="as_occt">
+                            <option value="">anywhere in the page</option>
+                            <option value="title">in the title of the page</option>
+                            <option value="body">in the text of the page</option>
+                            <option value="url">in the URL of the page</option>
+                            <option value="links">in links to the page</option>
+                        </select>
+                    </div>
+                    <div class="form-description"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">SafeSearch:</div>
+                    <div class="form-input">
+                        <select name="safe">
+                            <option value="images">Show most relevant results</option>
+                            <option value="active">Filter explicit results</option>
+                        </select>
+                    </div>
+                    <div class="form-description"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">file type:</div>
+                    <div class="form-input">
+                        <select name="as_filetype">
+                            <option value="">any format</option>
+                            <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                            <option value="ps">Adobe Postscript (.ps)</option>
+                            <option value="dwf">Autodesk DWF (.dwf)</option>
+                            <option value="kml">Google Earth KML (.kml)</option>
+                            <option value="kmz">Google Earth KMZ (.kmz)</option>
+                            <option value="xls">Microsoft Excel (.xls)</option>
+                            <option value="ppt">Microsoft Powerpoint (.ppt)</option>
+                            <option value="doc">Microsoft Word (.doc)</option>
+                            <option value="rtf">Rich Text Format (.rtf)</option>
+                            <option value="swf">Shockwave Flash (.swf)</option>
+                        </select>
+                    </div>
+                    <div class="form-description"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">usage rights:</div>
+                    <div class="form-input">
+                        <select name="as_rights">
+                            <option value="">not filtered by license</option>
+                            <option value="cc_publicdomain">free to use or share</option>
+                            <option value="cc_attribute">free to use or share, even commercially</option>
+                            <option value="cc_sharealike">free to use, share or modify</option>
+                            <option value="cc_noncommercial">free to use, share or modify, even commercially</option>
+                        </select>
+                    </div>
+                
+                </div>
+                <div class="button-container">
+                <button type="submit" class="search-button">Advanced Search</button>
+             </div>
+            </div>
+
+            
+        </form>
+    </div>
+</body>
+</html>
